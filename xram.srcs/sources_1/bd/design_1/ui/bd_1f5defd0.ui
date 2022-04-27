@@ -1,0 +1,128 @@
+{
+   "ActiveEmotionalView":"No Loops",
+   "Default View_ScaleFactor":"1.0",
+   "Default View_TopLeft":"-583,-188",
+   "DisplayTieOff":"1",
+   "ExpandedHierarchyInLayout":"",
+   "No Loops_ExpandedHierarchyInLayout":"",
+   "No Loops_Layout":"# # String gsaved with Nlview 7.0r6  2020-01-29 bk=1.5227 VDI=41 GEI=36 GUI=JA:10.0 non-TLS
+#  -string -flagsOSRD
+preplace port port-id_ddr2_cas_n -pg 1 -lvl 6 -x 1730 -y 610 -defaultsOSRD
+preplace port port-id_ddr2_ras_n -pg 1 -lvl 6 -x 1730 -y 590 -defaultsOSRD
+preplace port port-id_ddr2_we_n -pg 1 -lvl 6 -x 1730 -y 630 -defaultsOSRD
+preplace port port-id_CLK100MHZ -pg 1 -lvl 0 -x 0 -y 650 -defaultsOSRD
+preplace port port-id_CPU_RESETN -pg 1 -lvl 0 -x 0 -y 510 -defaultsOSRD
+preplace port port-id_LED16_B -pg 1 -lvl 6 -x 1730 -y 110 -defaultsOSRD
+preplace port port-id_LED16_R -pg 1 -lvl 6 -x 1730 -y 130 -defaultsOSRD
+preplace portBus ddr2_dq -pg 1 -lvl 6 -x 1730 -y 490 -defaultsOSRD
+preplace portBus ddr2_dm -pg 1 -lvl 6 -x 1730 -y 730 -defaultsOSRD
+preplace portBus ddr2_dqs_n -pg 1 -lvl 6 -x 1730 -y 530 -defaultsOSRD
+preplace portBus ddr2_cs_n -pg 1 -lvl 6 -x 1730 -y 710 -defaultsOSRD
+preplace portBus ddr2_dqs_p -pg 1 -lvl 6 -x 1730 -y 510 -defaultsOSRD
+preplace portBus ddr2_ck_p -pg 1 -lvl 6 -x 1730 -y 650 -defaultsOSRD
+preplace portBus ddr2_cke -pg 1 -lvl 6 -x 1730 -y 690 -defaultsOSRD
+preplace portBus ddr2_ck_n -pg 1 -lvl 6 -x 1730 -y 670 -defaultsOSRD
+preplace portBus ddr2_ba -pg 1 -lvl 6 -x 1730 -y 570 -defaultsOSRD
+preplace portBus ddr2_addr -pg 1 -lvl 6 -x 1730 -y 550 -defaultsOSRD
+preplace portBus ddr2_odt -pg 1 -lvl 6 -x 1730 -y 750 -defaultsOSRD
+preplace portBus LED -pg 1 -lvl 6 -x 1730 -y 90 -defaultsOSRD
+preplace inst ddr2_interface -pg 1 -lvl 4 -x 1200 -y 470 -swap {0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 54 55 60 56 57 58 59 53} -defaultsOSRD -pinDir DDR2 right -pinY DDR2 0R -pinDir DDR2.ddr2_dq right -pinY DDR2.ddr2_dq 20R -pinDir DDR2.ddr2_dqs_p right -pinY DDR2.ddr2_dqs_p 40R -pinDir DDR2.ddr2_dqs_n right -pinY DDR2.ddr2_dqs_n 60R -pinDir DDR2.ddr2_addr right -pinY DDR2.ddr2_addr 80R -pinDir DDR2.ddr2_ba right -pinY DDR2.ddr2_ba 100R -pinDir DDR2.ddr2_ras_n right -pinY DDR2.ddr2_ras_n 120R -pinDir DDR2.ddr2_cas_n right -pinY DDR2.ddr2_cas_n 140R -pinDir DDR2.ddr2_we_n right -pinY DDR2.ddr2_we_n 160R -pinDir DDR2.ddr2_ck_p right -pinY DDR2.ddr2_ck_p 180R -pinDir DDR2.ddr2_ck_n right -pinY DDR2.ddr2_ck_n 200R -pinDir DDR2.ddr2_cke right -pinY DDR2.ddr2_cke 220R -pinDir DDR2.ddr2_cs_n right -pinY DDR2.ddr2_cs_n 240R -pinDir DDR2.ddr2_dm right -pinY DDR2.ddr2_dm 260R -pinDir DDR2.ddr2_odt right -pinY DDR2.ddr2_odt 280R -pinDir S_AXI left -pinY S_AXI 0L -pinDir sys_rst left -pinY sys_rst 40L -pinDir clk_ref_i left -pinY clk_ref_i 100L -pinDir ui_clk_sync_rst left -pinY ui_clk_sync_rst 240L -pinDir ui_clk right -pinY ui_clk 300R -pinDir mmcm_locked right -pinY mmcm_locked 320R -pinDir sys_clk_i left -pinY sys_clk_i 180L -pinDir init_calib_complete right -pinY init_calib_complete 340R -pinDir aresetn left -pinY aresetn 20L
+preplace inst clk_wiz_0 -pg 1 -lvl 3 -x 800 -y 570 -defaultsOSRD -pinDir resetn left -pinY resetn 0L -pinDir clk_in1 left -pinY clk_in1 80L -pinDir ddr_ref_clk right -pinY ddr_ref_clk 0R -pinDir ddr_sys_clk right -pinY ddr_sys_clk 80R
+preplace inst proc_sys_reset -pg 1 -lvl 2 -x 460 -y 70 -swap {0 4 1 2 3 5 6 7 8 9} -defaultsOSRD -pinDir slowest_sync_clk right -pinY slowest_sync_clk 0R -pinDir ext_reset_in left -pinY ext_reset_in 380L -pinDir aux_reset_in left -pinY aux_reset_in 320L -pinDir mb_debug_sys_rst left -pinY mb_debug_sys_rst 340L -pinDir dcm_locked left -pinY dcm_locked 360L -pinDir mb_reset right -pinY mb_reset 20R -pinBusDir bus_struct_reset right -pinBusY bus_struct_reset 40R -pinBusDir peripheral_reset right -pinBusY peripheral_reset 60R -pinBusDir interconnect_aresetn right -pinBusY interconnect_aresetn 80R -pinBusDir peripheral_aresetn right -pinBusY peripheral_aresetn 160R
+preplace inst inverter -pg 1 -lvl 1 -x 150 -y 570 -swap {1 0} -defaultsOSRD -pinBusDir Op1 right -pinBusY Op1 20R -pinBusDir Res right -pinBusY Res 0R
+preplace inst system_ila_0 -pg 1 -lvl 4 -x 1200 -y 330 -defaultsOSRD -pinDir SLOT_0_AXI left -pinY SLOT_0_AXI 0L -pinDir clk left -pinY clk 20L -pinDir resetn left -pinY resetn 40L
+preplace inst controller_0 -pg 1 -lvl 5 -x 1550 -y 90 -swap {0 1 2 3 4 5 6 7 8 9 10 13 14 12 11} -defaultsOSRD -pinBusDir AMCI_WADDR left -pinBusY AMCI_WADDR 0L -pinBusDir AMCI_WDATA left -pinBusY AMCI_WDATA 20L -pinDir AMCI_WRITE left -pinY AMCI_WRITE 40L -pinDir AMCI_WIDLE left -pinY AMCI_WIDLE 60L -pinBusDir AMCI_RADDR left -pinBusY AMCI_RADDR 80L -pinBusDir AMCI_RDATA left -pinBusY AMCI_RDATA 100L -pinDir AMCI_READ left -pinY AMCI_READ 120L -pinDir AMCI_RIDLE left -pinY AMCI_RIDLE 140L -pinBusDir LED right -pinBusY LED 0R -pinDir BLINKY right -pinY BLINKY 20R -pinDir FAIL right -pinY FAIL 40R -pinDir DDR_CLK_LOCKED left -pinY DDR_CLK_LOCKED 320L -pinDir INIT_CALIB_COMPLETE left -pinY INIT_CALIB_COMPLETE 340L -pinDir CLK left -pinY CLK 200L -pinDir RESETN left -pinY RESETN 180L
+preplace inst axi4_noburst_master -pg 1 -lvl 3 -x 800 -y 70 -defaultsOSRD -pinDir M_AXI right -pinY M_AXI 0R -pinBusDir AMCI_WADDR right -pinBusY AMCI_WADDR 20R -pinBusDir AMCI_WDATA right -pinBusY AMCI_WDATA 40R -pinDir AMCI_WRITE right -pinY AMCI_WRITE 60R -pinDir AMCI_WIDLE right -pinY AMCI_WIDLE 80R -pinBusDir AMCI_RADDR right -pinBusY AMCI_RADDR 100R -pinBusDir AMCI_RDATA right -pinBusY AMCI_RDATA 120R -pinDir AMCI_READ right -pinY AMCI_READ 140R -pinDir AMCI_RIDLE right -pinY AMCI_RIDLE 160R -pinDir M_AXI_ACLK left -pinY M_AXI_ACLK 0L -pinDir M_AXI_ARESETN left -pinY M_AXI_ARESETN 160L
+preplace netloc CPU_RESETN_1 1 0 4 NJ 510 NJ 510 630 510 NJ
+preplace netloc Net 1 4 2 NJ 490 NJ
+preplace netloc Net1 1 4 2 NJ 530 NJ
+preplace netloc Net2 1 4 2 NJ 510 NJ
+preplace netloc axi4_noburst_master_AMCI_RDATA 1 3 2 N 190 NJ
+preplace netloc axi4_noburst_master_AMCI_RIDLE 1 3 2 N 230 NJ
+preplace netloc axi4_noburst_master_AMCI_WIDLE 1 3 2 N 150 NJ
+preplace netloc clk_in1_0_1 1 0 3 NJ 650 NJ 650 NJ
+preplace netloc clk_wiz_0_ddr_ref_clk 1 3 1 N 570
+preplace netloc clk_wiz_0_ddr_sys_clk 1 3 1 N 650
+preplace netloc controller_0_AMCI_RADDR 1 3 2 N 170 NJ
+preplace netloc controller_0_AMCI_READ 1 3 2 N 210 NJ
+preplace netloc controller_0_AMCI_WADDR 1 3 2 N 90 NJ
+preplace netloc controller_0_AMCI_WDATA 1 3 2 N 110 NJ
+preplace netloc controller_0_AMCI_WRITE 1 3 2 N 130 NJ
+preplace netloc controller_0_BLINKY 1 5 1 NJ 110
+preplace netloc controller_0_FAIL 1 5 1 NJ 130
+preplace netloc controller_0_LED 1 5 1 NJ 90
+preplace netloc ddr2_interface_init_calib_complete 1 4 1 1390 430n
+preplace netloc ddr2_interface_mmcm_locked 1 4 1 1370 410n
+preplace netloc ddr2_interface_ui_clk 1 2 3 630 10 1010 250 1350
+preplace netloc ddr2_interface_ui_clk_sync_rst 1 1 3 280J 710 NJ 710 N
+preplace netloc inverter_Res 1 1 1 280 450n
+preplace netloc mig_7series_0_ddr2_addr 1 4 2 NJ 550 NJ
+preplace netloc mig_7series_0_ddr2_ba 1 4 2 NJ 570 NJ
+preplace netloc mig_7series_0_ddr2_cas_n 1 4 2 NJ 610 NJ
+preplace netloc mig_7series_0_ddr2_ck_n 1 4 2 NJ 670 NJ
+preplace netloc mig_7series_0_ddr2_ck_p 1 4 2 NJ 650 NJ
+preplace netloc mig_7series_0_ddr2_cke 1 4 2 NJ 690 NJ
+preplace netloc mig_7series_0_ddr2_cs_n 1 4 2 NJ 710 NJ
+preplace netloc mig_7series_0_ddr2_dm 1 4 2 NJ 730 NJ
+preplace netloc mig_7series_0_ddr2_odt 1 4 2 NJ 750 NJ
+preplace netloc mig_7series_0_ddr2_ras_n 1 4 2 NJ 590 NJ
+preplace netloc mig_7series_0_ddr2_we_n 1 4 2 NJ 630 NJ
+preplace netloc proc_sys_reset_peripheral_aresetn 1 2 3 630 290 990 270 NJ
+preplace netloc axi4_noburst_master_M_AXI 1 3 1 970 70n
+levelinfo -pg 1 0 150 460 800 1200 1550 1730
+pagesize -pg 1 -db -bbox -sgen -150 0 1890 870
+",
+   "No Loops_ScaleFactor":"0.693938",
+   "No Loops_TopLeft":"-147,-71",
+   "guistr":"# # String gsaved with Nlview 7.0r6  2020-01-29 bk=1.5227 VDI=41 GEI=36 GUI=JA:10.0 non-TLS
+#  -string -flagsOSRD
+preplace port port-id_ddr2_cas_n -pg 1 -lvl 3 -x 690 -y 210 -defaultsOSRD
+preplace port port-id_ddr2_ras_n -pg 1 -lvl 3 -x 690 -y 190 -defaultsOSRD
+preplace port port-id_ddr2_we_n -pg 1 -lvl 3 -x 690 -y 230 -defaultsOSRD
+preplace port port-id_CLK100MHZ -pg 1 -lvl 0 -x 0 -y 80 -defaultsOSRD
+preplace port port-id_CPU_RESETN -pg 1 -lvl 0 -x 0 -y 300 -defaultsOSRD
+preplace port port-id_LED_C -pg 1 -lvl 3 -x 690 -y 370 -defaultsOSRD
+preplace port port-id_LED_B -pg 1 -lvl 3 -x 690 -y 410 -defaultsOSRD
+preplace port port-id_LED_A -pg 1 -lvl 3 -x 690 -y 430 -defaultsOSRD
+preplace portBus ddr2_dq -pg 1 -lvl 3 -x 690 -y 90 -defaultsOSRD
+preplace portBus ddr2_dm -pg 1 -lvl 3 -x 690 -y 330 -defaultsOSRD
+preplace portBus ddr2_dqs_n -pg 1 -lvl 3 -x 690 -y 130 -defaultsOSRD
+preplace portBus ddr2_cs_n -pg 1 -lvl 3 -x 690 -y 310 -defaultsOSRD
+preplace portBus ddr2_dqs_p -pg 1 -lvl 3 -x 690 -y 110 -defaultsOSRD
+preplace portBus ddr2_ck_p -pg 1 -lvl 3 -x 690 -y 250 -defaultsOSRD
+preplace portBus ddr2_cke -pg 1 -lvl 3 -x 690 -y 290 -defaultsOSRD
+preplace portBus ddr2_ck_n -pg 1 -lvl 3 -x 690 -y 270 -defaultsOSRD
+preplace portBus ddr2_ba -pg 1 -lvl 3 -x 690 -y 170 -defaultsOSRD
+preplace portBus ddr2_addr -pg 1 -lvl 3 -x 690 -y 150 -defaultsOSRD
+preplace portBus ddr2_odt -pg 1 -lvl 3 -x 690 -y 350 -defaultsOSRD
+preplace inst ddr2_interface -pg 1 -lvl 2 -x 540 -y 250 -defaultsOSRD
+preplace inst clk_wiz_0 -pg 1 -lvl 1 -x 210 -y 70 -defaultsOSRD
+preplace inst axi4_noburst_master_0 -pg 1 -lvl 1 -x 210 -y 240 -defaultsOSRD
+preplace netloc mig_7series_0_ddr2_cas_n 1 2 1 NJ 210
+preplace netloc mig_7series_0_ddr2_ras_n 1 2 1 NJ 190
+preplace netloc Net 1 2 1 NJ 90
+preplace netloc mig_7series_0_ddr2_dm 1 2 1 NJ 330
+preplace netloc Net1 1 2 1 NJ 130
+preplace netloc mig_7series_0_ddr2_cs_n 1 2 1 NJ 310
+preplace netloc Net2 1 2 1 NJ 110
+preplace netloc mig_7series_0_ddr2_ck_p 1 2 1 NJ 250
+preplace netloc mig_7series_0_ddr2_we_n 1 2 1 NJ 230
+preplace netloc mig_7series_0_ddr2_cke 1 2 1 NJ 290
+preplace netloc mig_7series_0_ddr2_ck_n 1 2 1 NJ 270
+preplace netloc mig_7series_0_ddr2_ba 1 2 1 NJ 170
+preplace netloc mig_7series_0_ddr2_addr 1 2 1 NJ 150
+preplace netloc mig_7series_0_ddr2_odt 1 2 1 NJ 350
+preplace netloc clk_in1_0_1 1 0 1 NJ 80
+preplace netloc clk_wiz_0_ddr_ref_clk 1 1 1 410 60n
+preplace netloc clk_wiz_0_ddr_sys_clk 1 1 1 390 80n
+preplace netloc sys_rst_0_1 1 0 2 20 360 400
+preplace netloc ddr2_interface_ui_clk_sync_rst 1 2 1 NJ 370
+preplace netloc ddr2_interface_mmcm_locked 1 2 1 NJ 410
+preplace netloc ddr2_interface_init_calib_complete 1 2 1 NJ 430
+preplace netloc ddr2_interface_ui_clk 1 0 3 30 490 NJ 490 670
+preplace netloc axi4_noburst_master_0_M_AXI 1 1 1 N 210
+levelinfo -pg 1 0 210 540 690
+pagesize -pg 1 -db -bbox -sgen -150 0 850 500
+"
+}
+0

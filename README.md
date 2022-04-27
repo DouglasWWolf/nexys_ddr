@@ -1,1 +1,1 @@
-"# nexys_ddr" 
+# DDR RAM Demo on a Nexys-A7-100T 
