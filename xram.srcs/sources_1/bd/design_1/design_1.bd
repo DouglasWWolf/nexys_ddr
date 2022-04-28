@@ -16,8 +16,8 @@
       "proc_sys_reset": "",
       "inverter": "",
       "system_ila_0": "",
-      "controller_0": "",
-      "axi4_noburst_master": ""
+      "axi4_noburst_master": "",
+      "controller_0": ""
     },
     "ports": {
       "ddr2_cas_n": {
@@ -364,100 +364,6 @@
           }
         }
       },
-      "controller_0": {
-        "vlnv": "xilinx.com:module_ref:controller:1.0",
-        "xci_name": "design_1_controller_0_0",
-        "xci_path": "ip\\design_1_controller_0_0\\design_1_controller_0_0.xci",
-        "inst_hier_path": "controller_0",
-        "reference_info": {
-          "ref_type": "hdl",
-          "ref_name": "controller",
-          "boundary_crc": "0x0"
-        },
-        "ports": {
-          "AMCI_WADDR": {
-            "direction": "O",
-            "left": "31",
-            "right": "0"
-          },
-          "AMCI_WDATA": {
-            "direction": "O",
-            "left": "31",
-            "right": "0"
-          },
-          "AMCI_WRITE": {
-            "direction": "O"
-          },
-          "AMCI_WIDLE": {
-            "direction": "I"
-          },
-          "AMCI_RADDR": {
-            "direction": "O",
-            "left": "31",
-            "right": "0"
-          },
-          "AMCI_RDATA": {
-            "direction": "I",
-            "left": "31",
-            "right": "0"
-          },
-          "AMCI_READ": {
-            "direction": "O"
-          },
-          "AMCI_RIDLE": {
-            "direction": "I"
-          },
-          "LED": {
-            "direction": "O",
-            "left": "15",
-            "right": "0"
-          },
-          "BLINKY": {
-            "direction": "O"
-          },
-          "FAIL": {
-            "direction": "O"
-          },
-          "DDR_CLK_LOCKED": {
-            "direction": "I"
-          },
-          "INIT_CALIB_COMPLETE": {
-            "direction": "I"
-          },
-          "CLK": {
-            "type": "clk",
-            "direction": "I",
-            "parameters": {
-              "ASSOCIATED_RESET": {
-                "value": "RESETN",
-                "value_src": "constant"
-              },
-              "FREQ_HZ": {
-                "value": "81247969",
-                "value_src": "default_prop"
-              },
-              "PHASE": {
-                "value": "0",
-                "value_src": "default_prop"
-              },
-              "CLK_DOMAIN": {
-                "value": "design_1_mig_7series_0_0_ui_clk",
-                "value_src": "default_prop"
-              }
-            }
-          },
-          "RESETN": {
-            "type": "rst",
-            "direction": "I",
-            "parameters": {
-              "POLARITY": {
-                "value": "ACTIVE_LOW",
-                "value_src": "constant"
-              }
-            }
-          }
-        }
-      },
       "axi4_noburst_master": {
         "vlnv": "xilinx.com:module_ref:axi4_noburst_master:1.0",
         "xci_name": "design_1_axi4_noburst_master_0_0",
@@ -782,6 +688,11 @@
             "left": "31",
             "right": "0"
           },
+          "AMCI_WSTRB": {
+            "direction": "I",
+            "left": "3",
+            "right": "0"
+          },
           "AMCI_WRITE": {
             "direction": "I"
           },
@@ -846,6 +757,105 @@
             "M_AXI": {
               "range": "4G",
               "width": "32"
+            }
+          }
+        }
+      },
+      "controller_0": {
+        "vlnv": "xilinx.com:module_ref:controller:1.0",
+        "xci_name": "design_1_controller_0_0",
+        "xci_path": "ip\\design_1_controller_0_0\\design_1_controller_0_0.xci",
+        "inst_hier_path": "controller_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "controller",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "AMCI_WADDR": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          },
+          "AMCI_WDATA": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          },
+          "AMCI_WSTRB": {
+            "direction": "O",
+            "left": "3",
+            "right": "0"
+          },
+          "AMCI_WRITE": {
+            "direction": "O"
+          },
+          "AMCI_WIDLE": {
+            "direction": "I"
+          },
+          "AMCI_RADDR": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          },
+          "AMCI_RDATA": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "AMCI_READ": {
+            "direction": "O"
+          },
+          "AMCI_RIDLE": {
+            "direction": "I"
+          },
+          "LED": {
+            "direction": "O",
+            "left": "15",
+            "right": "0"
+          },
+          "BLINKY": {
+            "direction": "O"
+          },
+          "FAIL": {
+            "direction": "O"
+          },
+          "DDR_CLK_LOCKED": {
+            "direction": "I"
+          },
+          "INIT_CALIB_COMPLETE": {
+            "direction": "I"
+          },
+          "CLK": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "ASSOCIATED_RESET": {
+                "value": "RESETN",
+                "value_src": "constant"
+              },
+              "FREQ_HZ": {
+                "value": "81247969",
+                "value_src": "default_prop"
+              },
+              "PHASE": {
+                "value": "0",
+                "value_src": "default_prop"
+              },
+              "CLK_DOMAIN": {
+                "value": "design_1_mig_7series_0_0_ui_clk",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "RESETN": {
+            "type": "rst",
+            "direction": "I",
+            "parameters": {
+              "POLARITY": {
+                "value": "ACTIVE_LOW",
+                "value_src": "constant"
+              }
             }
           }
         }
@@ -960,6 +970,12 @@
           "axi4_noburst_master/AMCI_WRITE"
         ]
       },
+      "controller_0_AMCI_WSTRB": {
+        "ports": [
+          "controller_0/AMCI_WSTRB",
+          "axi4_noburst_master/AMCI_WSTRB"
+        ]
+      },
       "controller_0_BLINKY": {
         "ports": [
           "controller_0/BLINKY",
@@ -995,8 +1011,8 @@
           "ddr2_interface/ui_clk",
           "proc_sys_reset/slowest_sync_clk",
           "system_ila_0/clk",
-          "controller_0/CLK",
-          "axi4_noburst_master/M_AXI_ACLK"
+          "axi4_noburst_master/M_AXI_ACLK",
+          "controller_0/CLK"
         ]
       },
       "ddr2_interface_ui_clk_sync_rst": {
@@ -1082,8 +1098,8 @@
           "proc_sys_reset/peripheral_aresetn",
           "ddr2_interface/aresetn",
           "system_ila_0/resetn",
-          "controller_0/RESETN",
-          "axi4_noburst_master/M_AXI_ARESETN"
+          "axi4_noburst_master/M_AXI_ARESETN",
+          "controller_0/RESETN"
         ]
       }
     },
